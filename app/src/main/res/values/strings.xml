@@ -1,0 +1,20 @@
+<resources>
+    <string name="app_name">Phone Application</string>
+    <string name="app_title">Home</string>
+    <string name="btn_calculator">Calculator</string>
+    <string name="btn_contacts">Contacts</string>
+    <string name="btn_website">Website</string>
+    <string name="title_calculator">Simple Calculator</string>
+    <string name="btn_add">Add</string>
+    <string name="btn_sub">Subtract</string>
+    <string name="btn_mul">Multiply</string>
+    <string name="btn_div">Divide</string>
+    <string name="Contacts_title">Contacts</string>
+    <string-array name="contacts">
+        <item>Daniel</item>
+        <item>Phoebe</item>
+        <item>Jane</item>
+        <item>Prisca</item>
+        <item>Pamela</item>
+    </string-array>
+</resources>

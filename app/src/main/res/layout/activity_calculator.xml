@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Calculator">
+
+    <TextView
+        android:id="@+id/mTvConTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="34dp"
+        android:text="@string/title_calculator"
+        android:textColor="@color/title_color"
+        android:textSize="40sp"
+        android:textStyle="italic|bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/mTvAnswer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="69dp"
+        android:layout_marginBottom="37dp"
+        android:text="0.00"
+        android:textSize="25sp"
+        app:layout_constraintBottom_toTopOf="@+id/mEdFstNum"
+        app:layout_constraintStart_toStartOf="@+id/mEdFstNum" />
+
+    <EditText
+        android:id="@+id/mEdFstNum"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="201dp"
+        android:ems="10"
+        android:hint="Enter First Number"
+        android:inputType="numberDecimal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/mEdSecNum"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="46dp"
+        android:ems="10"
+        android:hint="Enter Second Number"
+        android:inputType="numberDecimal"
+        app:layout_constraintStart_toStartOf="@+id/mEdFstNum"
+        app:layout_constraintTop_toBottomOf="@+id/mEdFstNum" />
+
+    <Button
+        android:id="@+id/mBtnAdd"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="51dp"
+        android:layout_marginBottom="42dp"
+        android:text="@string/btn_add"
+        app:layout_constraintBottom_toTopOf="@+id/mBtnMul"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/mBtnSub"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="2dp"
+        android:layout_marginBottom="41dp"
+        android:text="@string/btn_sub"
+        app:layout_constraintBottom_toTopOf="@+id/mBtnDiv"
+        app:layout_constraintEnd_toEndOf="@+id/mBtnDiv" />
+
+    <Button
+        android:id="@+id/mBtnMul"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="48dp"
+        android:layout_marginBottom="190dp"
+        android:text="@string/btn_mul"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/mBtnDiv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="60dp"
+        android:layout_marginBottom="187dp"
+        android:text="@string/btn_div"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>
